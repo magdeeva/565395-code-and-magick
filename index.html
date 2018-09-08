@@ -178,8 +178,31 @@
       </svg>
     </div>
     <p class="setup-similar-label">Петр Петров</p>
-  </div>
+  </div><script type="text/javascript">
+var fireballSize = 22; // размер фаербола
+var  getFireballSpeed = function ( left) {
+if (left){
+var FireballSpeed = 5;}
+else {
+  FireballSpeed = 2;
+}
+return(FireballSpeed);
+}
+var wizardSpeed = 3;// скорость мага
+var wizardWidth = 70;// ширина мага
+var getWizardHeight = function(wizardWidth)
+{ var WizardHeight = 1.33 * wizardWidth;
+return(WizardHeight);
+}
+var getWizardX = function ( width) {
+  return (width - wizardWidth)/2;
+}
+var getWizardY = function (height) {
+  return height/3;
+}
+</script>
 </template>
+  
 
 <script src="js/game.js"></script>
 
